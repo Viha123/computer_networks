@@ -1,0 +1,7 @@
+- OSI MODEL
+- 7 layer acronym: please do not throw sausage pizza over it? 
+- TCP/IP vs UDP:
+	- TCP guarantees that recipient will receive the packet
+	- UDP packets can be lost
+- BGP border gateway protocol
+- #computerNetworks 

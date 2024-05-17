@@ -1,0 +1,20 @@
+- provides:
+	- confidentiality: via symmetric encryption
+	- integrity: via cryptographic hashing
+	- authentication: via public key cryptography
+- whats needed?
+	- **handshake** (A, B use certificates, private keys to authenticate each other, exchange or create shared secret)
+	- **key derivation**: a, B use shared secret to derive set of keys
+	- **data transfer**: stream data transfer
+	- **connection closure**: special messages to securely close connection.
+- Message Authentication Code (MAC)
+- 4 keys:
+	- Kc: encryption key for data sent from client to server
+	- Mc: MAC key for data sent from client to server
+	- and vice versa for the server to client keys
+TLS 1.3:
+- only 5 choices
+- requires Diffie Hellman
+- ![[Pasted image 20240514173859.png]]
+- ![[Pasted image 20240514173910.png]]
+- 

@@ -1,0 +1,27 @@
+#computerNetworks #web 
+- no one server that can answer all the queries
+- **Q: how to map between IP address and name, and vice versa**
+- DNS PROVIDES IP ADDRESS, BGP PROVIDES WAY TO GET TO THAT IP ADDRESS
+- **Domain Name System**: 
+	- distributed database implemented by hierarchy to many named servers
+	- **application-layer protocol**: hosts, name servers, communicate to resolve names
+	- note: core Internet function
+- ![[Pasted image 20240214122314.png]]
+- authoritative DNS servers:
+	- organization's own DNS server(s) providing authoritative host name to IP mappings
+- Local DNS:
+	- ![[Pasted image 20240214122719.png]]
+		- DNS (domain name system) servers provide the IP address, but **BGP provides the most efficient way to reach that IP address**. Roughly speaking, if DNS is the Internet's address book, then BGP is the Internet's road map.
+	- ![[Pasted image 20240214123729.png]]
+	- `dig`: gives you something
+- caching, updating DNS Records:
+	- once (any) name server learns mapping it caches
+	- cache entries disappear after TTL
+- DNS records:
+	- RR (resource records) RR format: (name, value, type, ttl)
+	- each DNS reply message carries one or more resource records
+	- TTL describes when a resource record should be removed from the cache
+	- if a DNS server is authorative for a particular hostname, then the DNS server will contain a type A record for hostname. If a server is not authorative, it may not or may contain a Type A
+	- 
+	- type = CNAME is alias name for some "canonical"
+- 

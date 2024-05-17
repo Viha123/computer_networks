@@ -1,0 +1,2 @@
+- socket(AF_INET, SOCK_STREAM) (TCP), SOCK_DGRAM i think for udp
+- 

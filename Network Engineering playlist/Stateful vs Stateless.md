@@ -1,0 +1,5 @@
+- if you can restart your server without interrupting the client, then your server is stateless because you don't store information about the client such as is the client connected, client acknolwedged etc
+- TCP is stateful, the server and client both carry information about the connection, if you destroy the server or client, then the connection is closed
+	- connection is lost
+- HTTP is stateless
+- #computerNetworks 

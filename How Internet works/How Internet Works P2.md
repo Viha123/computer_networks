@@ -1,0 +1,89 @@
+#computerNetworks 
+- **Access networks: digital subscriber line**: 
+	- use existing telephone line to central office DSLAM (digital subscriber line)
+	- data over DSL line goes to Internet, different frequencies over dedicated line
+	- voice over DSL line goes to telephone net
+- **Access Networks: home networks**
+	- **downstream**: data that comes from server to house 
+	- **upstream**: data form house to server 
+	- same cable for both, but older tech might have different cables
+	- fiber: TX-RX, RX-TX
+- what does a **firewall** do?
+	- **forward proxy**:  
+	- **reverse proxy**: 
+- ifconfig: get IP address of your computer
+- **wireless access networks (WAN)**
+	- shared wireless access network connects end system to router
+	- via base station aka "access point"
+	- **wlans (wireless local area networks)**
+		- typically within or around building
+	- **Wide area cellular access networks**:
+		- provided by mobile, cellular network
+- **Access Networks: enterprise networks**
+	- companies, universities
+	- mix of wired, wireless link tech, connecting a mix of switches and routers
+	- units in Mbps (megaBITs per second), now we have around 40Gigabits per second
+	- interface speeds are evolving at a slower rate than processor computation 
+- **Host: sends packets of data**:
+	- machines break up the data that you send into packets of length **L** bits
+	- transmission rate **R** (bits/sec)
+	- link transmission rate, aka links
+	- bits/(bits/sec) = sec
+	- transmission delay = L/R = time needed to transmit L-bit packet into link
+	- **how does speed test stuff work?**
+- **Links: physical media**:
+	- physical link: ties between transmitter and receiver
+	- guided media: signals propagate in solid media: copper, fiber
+	- unquided media: signals propagates freely, eg. radio
+	- **Twisted pair**: two insulated copper wires: two insulated copper wires. 
+		- category 5: 100Mbps
+		- category 6: 10Gps Ethernet
+	- **Coaxial cable**
+		- two concentric copper conductors
+		- bidirectional
+		- 
+	- **Fiber optic cables**
+		- glass fiber carrying ligh pulses,each pulse a bit
+		- high speed P2P transmission
+		- low error rate. Immune to electromagnetic nose
+	- Wireless Radio
+		- no wire
+		- broadcast adn "half-duplex"
+	- Radio link types:
+		- **terrestrial microwave**
+		- **satellite**
+		- wireless LAN (Wifi)
+		- wide-area (eg cellular)
+- **Network Core**:
+	- mesh of interconnected routers
+	- **packet-switching**: hosts break application layer messages into **packets**
+		- forward packets from one router to the next, across links on path from src to dst
+		- each packet transmitted at full capacity
+	- **Transmission Delay**: L/R 
+	- **store and forward**: entire packet must arrive at router before it can be transmitted on next link
+	- **end-end delay**: 2L/R assuming zero propagation 
+	- you can have queuing delays like traffic
+	- Packet queuing and loss: if arrival rate exceeds transmission late of link for a period of time
+		- packets will queue waiting to be transmitted on output link
+		- packets can be dropped (lost) if memory (buffer) in router fills up
+	- IP is best effort delivery
+	- Two key network-core functions
+		- **forwarding**:
+			- local action: move arriving packets from router's input link to appropriate router output link
+		- **routing**: 
+			- global action determine source destination paths taken by packets
+			- routing algorithm
+	- **Alternative to packet switching: circuit switching**
+		- end-end resources allocated to, reserved for "call" between source and destination
+		- path stitched from src to dst
+		- circuit segment idkle if not used by call (no sharing)
+		- commonly used in traditional telephone networks
+		- **FDM and TDM**:
+			- frequency division multiplexing:
+				- each call allocated its own band can transmit at max rate of that narrow band
+			- Time division multiplexing:
+				- time divided into slots
+				- each call allocated periodic slots
+					- can transmit at maximum rate of frequency band but only for its time slots
+	- 
+	- **Unicast, multicast, broadcast, anycast**

@@ -1,0 +1,14 @@
+- "match" + "Action"
+- action: 
+	- the action can include: port-forwarding, load balancing
+- in generalized forwarding: a match+action table generalizes the notion of forwarding.
+- the devices that do these are called **packet switches**
+- OpenFlow:
+	- each entry in the match+action forwarding table is known as a **flow table** in openFlow includes:
+	- flow table is essentially an API, the abstraction through which an individual packet switch's behavior can be programmed.
+	- ![[Pasted image 20240319090915.png]]
+	- the ingress port is referred to as the input port at the packet switch on which a packet is received.
+	- important actions:
+		- **forwarding**: packet may be forwarded to output port, or broadcast etc
+		- **dropping**: flow table entyr with no action indicates that a matched packet should be dropped
+		- 

@@ -1,0 +1,29 @@
+- Denial of Service:
+	- prevent users from consuming a particular service on the server
+	- usually a HTTP web server
+- [[Bandwidth]]
+- Attack types:
+	- **Bandwidth based DOS**: server cannot accept any more requests
+		- if you keep sending the max bandwidth of data
+		- the server will be busy just processing the person sending a lot
+		- other people will be blocked because server will be attending to the 
+	- DDOS:
+		- client machine which might have 10mbs, and server has 1gb/s, server can go through that really quickly
+		- so what DDoS does: 
+			- make 100 computers send 10mbps
+			- if server notices that then server blocks the person
+	- **Max connections based DOS**: maximum number of TCP connections
+		- in stateful protocol, server keeps information about client in RAM
+		- some resources associated with TCP connection
+		- cannot keep associating TCP connections forever, sets a cap on maximum number of connections
+		- APACHES 200 TCP connection
+		- server will have preventative measure to timeout after certain time of inactivity
+		- one machine can establish a TCP connection and keep it alive
+			- it sends request to connect and sends 1 byte at a time, sends slowly, server still thinks
+			- **Slowloris**
+		- 
+	- **Vulnerability based DOS**: zero day stuff
+		- send a malicious string for a legit input, instead of sending a fixed length string, send a lot more
+		- make server crash
+		- malicious string that has code in it that can run on the server
+#computerNetworks

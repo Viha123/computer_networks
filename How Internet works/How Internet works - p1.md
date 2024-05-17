@@ -1,0 +1,25 @@
+#computerNetworks 
+- **Internet vs internet**:
+	- Internet is the entire thing
+	- internet is the local network
+- **Packet Switches**:
+	- forward packets (chunks of data)
+	- routers, switches
+- **Communication links**:
+	- fiber, copper, radio, satellite
+	- transmission rate: bandwidth
+- **Networks**:
+	- collection of devices, routers, links managed by organization
+- **DHCP**: dynamic host configuration protocol the protocol used to give a device an IP address
+- **Internet Standards**:
+	- **RFC**: request for comments
+	- **IETF**: Internet Engineering Task Force
+- **ARPANET**: olden times 
+- **Protocols are everywhere**; HTTP, streaming video, Skype, TCP, IP, Wifi, 4G, Ethernet
+- **what is a protocol**: 
+	- Protocols define the **format**, **order** of messages sent and received among network entities, and actions taken on msg transmission, receipt. 
+- **Network Edge**: hosts, access network, physical media
+	- Network Core: interconnected routers, network of networks
+	- Custom silicon
+	- edge router doesn't process as many packets as say a core router
+- 

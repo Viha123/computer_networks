@@ -1,0 +1,26 @@
+- firewall: isolates organization's internal network from larger Internet, allowing some packets to pass, blocking others.
+- **Why?**
+	- prevent DoS attacks
+	- prevent illegal modificaiton/access of internal data
+	- allow only authorized access to inside network
+	- three types of firewalls:
+		- state packet filters
+		- stateful packet filters
+		- application gateways
+- **stateless packet filtering**:
+	- filters packet by packet. 
+	- desicion to forwared/drop based on:
+		- tcp syn, ack
+		- tcp/udp src, dest port numbers
+		- ICMP message type
+		- src IP, dst IP
+	- admits packets that make no sense. eg: dst port = 80, ACK bit set, even though no TCP connection is established/
+- **stateful packet filtering**:
+	- tracky connection setupu (SYN), teardown (FIN): determine whether incoming, outgoing packets "make sense"
+	- timeout inactive connections at firewall: no longer admit packets
+	- ACL augmented to indicate need to check connection state table before admitting packet
+	- 
+- **ACL: access control lists**
+- **Application gateways**:
+IDS: 
+- intrusion detection system

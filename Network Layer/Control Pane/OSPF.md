@@ -1,0 +1,8 @@
+- used for intra Autonomous System routing on the internet
+- link state protocol
+- with OSPF the router broadcasts routing info to all the other routers and not just the neighboring router
+- OSPF protocol number: 89
+- some advances:
+	- **security**: passwords/authentication and encryption keys
+	- **multiple same-cost paths**: when multiple paths have the same costs, you can configure OSPF to use any of the paths and not just one of them
+	- support for **unicast and multicast**

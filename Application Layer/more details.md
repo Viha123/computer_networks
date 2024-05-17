@@ -1,0 +1,7 @@
+- Application Layer protocol defines how an application's process running on different end systems pass messages to each other. 
+- In particular it defines:
+	- the types of messages exchanged, request and response messages
+	- syntax of various message types
+	- meaning of the information of the fields
+	- rules for determining when and how a process sends messages and responds to messages
+- 
